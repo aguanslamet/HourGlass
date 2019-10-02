@@ -40,7 +40,7 @@ class _MyBodyState extends State<MyBody> {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: items.length,
-      itemExtent: 155.0,
+      itemExtent: 100.0,
       itemBuilder: (context, index) {
         final pkey = items[index];
         return TimerCard(
@@ -56,7 +56,7 @@ class _MyBodyState extends State<MyBody> {
                 content: Text(
                   "You have deleted $pkey",
                 ),
-                duration: Duration(milliseconds: 500),
+                duration: Duration(milliseconds: 300),
               ));
             });
           },
